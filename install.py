@@ -1,6 +1,6 @@
-# Tool Name :- Tool-X
-# Author :- Rajkumar dusad
-# Date :- 1/11/2017
+# Tool Name :- SuperTools
+# Author :- S.U. Pathan
+# Date :- 28/06/21
 
 import os
 import sys
@@ -15,23 +15,23 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("\033[1;33m Do you want to install Tool-X [Y/n]> \033[00m")
+      inp=input("\033[1;33m Do you want to install SuperTools [Y/n]> \033[00m")
       if inp=="y" or inp=="Y":
         os.system("clear")
         logo.installing()
         if system.sudo is not None:
           #require root permission
-          if os.path.exists(system.conf_dir+"/Tool-X"):
+          if os.path.exists(system.conf_dir+"/SuperTools"):
             pass
           else:
-            os.system(system.sudo+" mkdir "+system.conf_dir+"/Tool-X")
-          os.system(system.sudo+" cp -r modules core Tool-X.py "+system.conf_dir+"/Tool-X")
-          os.system(system.sudo+" cp -r core/Tool-X "+system.bin)
-          os.system(system.sudo+" cp -r core/toolx "+system.bin)
-          os.system(system.sudo+" chmod +x "+system.bin+"/Tool-X")
-          os.system(system.sudo+" chmod +x "+system.bin+"/toolx")
-          os.system("cd .. && "+system.sudo+" rm -rf Tool-X")
-          if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+            os.system(system.sudo+" mkdir "+system.conf_dir+"/SuperTools")
+          os.system(system.sudo+" cp -r modules core SuperTools.py "+system.conf_dir+"/SuperTools")
+          os.system(system.sudo+" cp -r core/SuperTools "+system.bin)
+          os.system(system.sudo+" cp -r core/supertools "+system.bin)
+          os.system(system.sudo+" chmod +x "+system.bin+"/SuperTools")
+          os.system(system.sudo+" chmod +x "+system.bin+"/supertools")
+          os.system("cd .. && "+system.sudo+" rm -rf SuperTools")
+          if os.path.exists(system.bin+"/SuperTools") and os.path.exists(system.conf_dir+"/SuperTools"):
             os.system("clear")
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
@@ -42,17 +42,17 @@ class tool:
             tmp=input("\033[1;36m ##> \033[00m")
             break
         else:
-          if os.path.exists(system.conf_dir+"/Tool-X"):
+          if os.path.exists(system.conf_dir+"/SuperTools"):
             pass
           else:
-            os.system("mkdir "+system.conf_dir+"/Tool-X")
-          os.system("cp -r modules core Tool-X.py "+system.conf_dir+"/Tool-X")
-          os.system("cp -r core/Tool-X "+system.bin)
-          os.system("cp -r core/toolx "+system.bin)
-          os.system("chmod +x "+system.bin+"/Tool-X")
-          os.system("chmod +x "+system.bin+"/toolx")
-          os.system("cd .. && rm -rf Tool-X")
-          if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+            os.system("mkdir "+system.conf_dir+"/SuperTools")
+          os.system("cp -r modules core SuperTools.py "+system.conf_dir+"/SuperTools")
+          os.system("cp -r core/SuperTools "+system.bin)
+          os.system("cp -r core/supertools "+system.bin)
+          os.system("chmod +x "+system.bin+"/SuperTools")
+          os.system("chmod +x "+system.bin+"/supertools")
+          os.system("cd .. && rm -rf SuperTools")
+          if os.path.exists(system.bin+"/SuperTools") and os.path.exists(system.conf_dir+"/SuperTools"):
             os.system("clear")
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
