@@ -4,9 +4,6 @@ class logo:
     print('''\007
 
 \033[1;33m
-
-Md Nazmul Islam
-Md Nazmul sent Today at 2:43 AM
    ___                       _____          _     
  / ___|                    |_   __|        | |    
 | (_  _        _ _ _   __ _ _| | __   _ | |___ 
