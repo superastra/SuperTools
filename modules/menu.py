@@ -188,16 +188,16 @@ class main:
         os.system("clear")
         logo.exit()
         break
-      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall tool-x" or cmd=="unistall Tool-X":
+      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall supertools" or cmd=="unistall SuperTools":
         system=sys()
         if system.sudo:
-          os.system(system.sudo+" rm -rf "+system.bin+"/Tool-X")
-          os.system(system.sudo+" rm -rf "+system.bin+"/toolx")
-          os.system(system.sudo+" rm -rf "+system.conf_dir+"/Tool-X")
+          os.system(system.sudo+" rm -rf "+system.bin+"/SuperTools")
+          os.system(system.sudo+" rm -rf "+system.bin+"/supertools")
+          os.system(system.sudo+" rm -rf "+system.conf_dir+"/SuperTools")
         else:
-          os.system("rm -rf "+system.bin+"/Tool-X")
-          os.system("rm -rf "+system.bin+"/toolx")
-          os.system("rm -rf "+system.conf_dir+"/Tool-X")
+          os.system("rm -rf "+system.bin+"/SuperTools")
+          os.system("rm -rf "+system.bin+"/supertools")
+          os.system("rm -rf "+system.conf_dir+"/SuperTools")
         os.system("clear")
         logo.exit()
         break
@@ -212,9 +212,9 @@ class tools:
   category_data=None
   def __init__(self):
     system=sys()
-    with open(system.conf_dir+"/Tool-X/core/data.json") as data_file:
+    with open(system.conf_dir+"/SuperTools/core/data.json") as data_file:
       self.data=json.load(data_file)
-    with open(system.conf_dir+"/Tool-X/core/cat.json") as cat_file:
+    with open(system.conf_dir+"/SuperTools/core/cat.json") as cat_file:
       self.category_data=json.load(cat_file)
     self.names=list(self.data.keys())
     self.category=list(self.category_data.keys())
