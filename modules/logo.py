@@ -4,11 +4,11 @@ class logo:
     print('''\007
 
 \033[1;33m
-         _____           _    __  __
-        |_   _|__   ___ | |   \ \/ /
-          | |/ _ \ / _ \| |____\  /
-          | | (_) | (_) | |____/  \    
-          |_|\___/ \___/|_|   /_/\_\ \033[1;91mv2.1
+                  _____           _     __
+                 |_   _|__   ___ | |  / -- \
+                   | |/ _ \ / _ \| |  \ -- /
+                   | | (_) | (_) | |  /  /\ \
+                   |_|\___/ \___/|_|/__/   \_\  \033[1;91mv2.1
 
 
 \033[1;36m =============================================\033[1;m
@@ -25,7 +25,7 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mWe can't install Tool-X.\033[1;m
+\033[1;31m  [ + ]  \033[1;31mWe can't install SuperTools.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mThere are some error.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[1;m''')
     self.tool_footer()
@@ -48,16 +48,16 @@ class logo:
   def ins_sc(self):
     self.tool_header()
     print ('''
-\033[1;33m    [ + ] \033[1;32mTool-X installed successfully.
-\033[1;33m    [ + ] \033[1;32mTo run Tool-X.
-\033[1;33m    [ + ] \033[1;32mType Tool-X in your terminal.''')
+\033[1;33m    [ + ] \033[1;32mSuperTools installed successfully.
+\033[1;33m    [ + ] \033[1;32mTo run SuperTools.
+\033[1;33m    [ + ] \033[1;32mType SuperTools in your terminal.''')
     self.tool_footer()
 
   @classmethod
   def update(self):
     self.tool_header()
     print ('''
-\033[1;33m  [ 1 ] \033[1;32mUpdate your Tool-X.
+\033[1;33m  [ 1 ] \033[1;32mUpdate your SuperTools.
 \033[1;33m  [ 0 ] \033[1;32mFor Back.\033[00m''')
     self.tool_footer()
 
@@ -65,7 +65,7 @@ class logo:
   def updated(self):
     self.tool_header()
     print ('''
-\033[1;33m      [ + ] \033[1;32mTool-X Updated Successfully.
+\033[1;33m      [ + ] \033[1;32mSuperTools Updated Successfully.
 \033[1;33m      [ + ] \033[1;32mPress Enter to continue.\033[00m''')
     self.tool_footer()
 
@@ -82,7 +82,7 @@ class logo:
   def update_error(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mWe can't Update Tool-X.\033[1;m
+\033[1;31m  [ + ]  \033[1;31mWe can't Update SuperTools.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
@@ -91,12 +91,12 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-\033[1;33m       [+] Tool Name :- \033[1;32mTool-X
-\033[1;33m       [+] Author :- \033[1;32mRajkumar Dusad
-\033[1;33m       [+] Latest Update :- \033[1;32m23/3/2019.\033[1;m
+\033[1;33m       [+] Tool Name :- \033[1;32mSuperTools
+\033[1;33m       [+] Author :- \033[1;32mS.U. Pathan
+\033[1;33m       [+] Latest Update :- \033[1;32m28/06/21.\033[1;m
 \033[1;33m       [+] Tools :- \033[1;32mtotal {total} tools.\033[1;m
 
-\033[1;33m [+] \033[1;32mTool-x is automatic tool installer.
+\033[1;33m [+] \033[1;32mSuperTools is automatic tool installer.
 \033[1;33m [+] \033[1;32mMade for termux and linux based system.
 \033[1;31m [+] Note :- Use this tool at your own risk.''')
     self.tool_footer()
@@ -144,7 +144,7 @@ class logo:
   @classmethod
   def updating(self):
     print ("""\033[01;33m =============================================
-\033[01;32m|______________ Updating Tool-X ______________|
+\033[01;32m|____________ Updating SuperTools ____________|
  \033[01;33m=============================================\033[00m""")
 
   @classmethod
@@ -159,7 +159,7 @@ class logo:
     print (f'''
 \033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
 \033[1;33m  [ 2 ] \033[1;32mTools Category.
-\033[1;33m  [ 3 ] \033[1;32mUpdate Tool-X.
+\033[1;33m  [ 3 ] \033[1;32mUpdate SuperTools.
 \033[1;33m  [ 4 ] \033[1;32mAbout Us.
 \033[1;33m  [ x ] \033[1;32mFor Exit.''')
     self.tool_footer()
@@ -168,6 +168,6 @@ class logo:
   def exit(self):
     self.tool_header()
     print ('''
-\033[1;33m         [ + ] \033[1;32mThanks for using Tool-X
+\033[1;33m         [ + ] \033[1;32mThanks for using SuperTools.
 \033[1;33m         [ + ] \033[1;32mGood By..... :)\033[00m''')
     self.tool_footer()
