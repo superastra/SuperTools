@@ -7,13 +7,13 @@
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "A-Rat" : { 
-    "name" : "A-Rat",
-    "package_name" : "A-Rat",
-    "category" : ["exploitation_tools"],
-    "url" : "https://github.com/Xi4u7/A-Rat.git",
+  "Zphisher" : {
+    "name" : "Zphisher",
+    "package_name" : "Zphisher",
+    "category" : [null],
+    "url" : "https://github.com/htr-tech/zphisher.git",
     "package_manager" : "git",
-    "dependency" : ["python","git"]
+    "dependency" : ["git"]
   },
   "ADB-Toolkit" : { 
     "name" : "ADB-Toolkit",
